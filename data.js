@@ -18,7 +18,8 @@ const simpleProducts = [
 const products = [
   {
     ID: 1,
-    Name: "HD Video Player",
+    Name:
+      "HD Video Playeraklsdjfhasdkljfhalfjhaldkhfdkjhflaskjdhfaldkjfhalshfjalsdjhfdklfjghdslgfjhsdlfkjghdlskfjghsdlkfjhsdlgkj",
     Price: 330,
     Current_Inventory: 225,
     Backorder: 0,

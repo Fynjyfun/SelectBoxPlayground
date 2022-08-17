@@ -25,11 +25,22 @@
       <div class="dx-field">
         <div class="dx-field-label">Read only</div>
         <div class="dx-field-value">
+          <!-- <div style=""> -->
           <DxSelectBox
-            :items="simpleProducts"
-            :value="simpleProducts[0]"
+            :input-attr="{}"
+            :data-source="products"
+            :value="products[0].ID"
+            display-expr="Name"
+            value-expr="ID"
             :read-only="true"
-          />
+            field-template="field"
+          >
+            <template #field="{ data }">
+              <FieldNew :field-data="data" />
+            </template>
+          </DxSelectBox>
+          <!-- :input-attr="{}" -->
+          <!-- </div> -->
         </div>
       </div>
       <div class="dx-field">
@@ -93,6 +104,7 @@
 import DxSelectBox from "devextreme-vue/select-box";
 import ArrayStore from "devextreme/data/array_store";
 import Field from "./Field.vue";
+import FieldNew from "./FieldNew.vue";
 import Item from "./Item.vue";
 
 import service from "./data.js";
@@ -102,6 +114,7 @@ export default {
     DxSelectBox,
     Field,
     Item,
+    FieldNew,
   },
   data() {
     const products = service.getProducts();
