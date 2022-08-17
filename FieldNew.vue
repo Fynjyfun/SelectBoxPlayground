@@ -1,6 +1,11 @@
 <template>
   <div class="custom-item">
-    <DxTextBox
+    <DxTextArea
+      :inputAttr="{
+        wrap: 'off',
+        rows: '1',
+        style: 'white-space: nowrap;',
+      }"
       :value="fieldData && fieldData.Name"
       :read-only="true"
       class="product-name"
@@ -8,11 +13,11 @@
   </div>
 </template>
 <script>
-import DxTextBox from "devextreme-vue/text-box";
+import DxTextArea from "devextreme-vue/text-area";
 
 export default {
   components: {
-    DxTextBox,
+    DxTextArea,
   },
   props: {
     fieldData: {

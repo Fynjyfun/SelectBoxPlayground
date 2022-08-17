@@ -19,7 +19,7 @@ const products = [
   {
     ID: 1,
     Name:
-      "HD Video Playeraklsdjfhasdkljfhalfjhaldkhfdkjhflaskjdhfaldkjfhalshfjalsdjhfdklfjghdslgfjhsdlfkjghdlskfjghsdlkfjhsdlgkj",
+      "HD Video Playeraksdjfhasdkljfhalfjhaldkhfdkjhflaskjdhfaldkjfhalshfjalsdjhfdklfjghdslgfjhsdlfkjghdlskfjghsdlkfjhsdlgkj",
     Price: 330,
     Current_Inventory: 225,
     Backorder: 0,
