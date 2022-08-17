@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@devextreme/runtime": "3.0.7",
+    "devexpress-diagram": "2.1.63",
+    "devexpress-gantt": "4.1.32",
+    "devextreme": "22.1.4",
+    "devextreme-quill": "1.5.16",
+    "devextreme-vue": "22.1.4",
+    "dx-systemjs-vue-browser": "1.0.15",
+    "es6-object-assign": "1.1.0",
+    "inferno": "7.4.4",
+    "inferno-clone-vnode": "7.4.11",
+    "inferno-compat": "7.4.11",
+    "inferno-create-class": "7.4.11",
+    "inferno-create-element": "7.4.11",
+    "inferno-dom": "latest",
+    "inferno-extras": "7.4.11",
+    "inferno-hydrate": "7.4.11",
+    "jszip": "3.7.1",
+    "luxon": "1.28.0",
+    "mitt": "latest",
+    "rrule": "2.6.4",
+    "vue": "3.0.0"
+  },
+  "description": "The SelectBox component allows users to select an item from a drop-down list. This demo illustrates the following  SelectBox properties:\n\nitems\nSpecifies an array of items displayed in the SelectBox.\nplaceholder\nSpecifies the text that is displayed when no items are selected.\nreadOnly\nPrevents users from changing the editor's value via the UI.\ndisabled\nSpecifies whether the SelectBox responds to user interaction.\ndataSource\nBinds the SelectBox to data. Unlike the items property, dataSource accepts the DataSource object that allows users to sort, filter, group, and shape data.\nfieldTemplate and itemTemplate\nAllow you to customize the text field and drop-down list items.\nonValueChanged event handler\nUse this function to perform an action when a user chooses a new value. In this demo, this function is used to display the selected value.\n\nTo get started with the DevExtreme SelectBox component, refer to the following tutorial for step-by-step instructions: Getting Started with SelectBox.\n",
+  "name": "Overview - DevExtreme Select Box"
+}
