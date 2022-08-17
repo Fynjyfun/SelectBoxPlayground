@@ -3,9 +3,13 @@
   <div>
     <div class="dx-fieldset">
       <div class="dx-field">
+        <div class="dx-field-label">Full Name</div>
+        <div class="dx-field-value-static">John Smith</div>
+      </div>
+      <div class="dx-field">
         <div class="dx-field-label">Default mode</div>
         <div class="dx-field-value">
-          <DxSelectBox :items="simpleProducts"/>
+          <DxSelectBox :items="simpleProducts" />
         </div>
       </div>
       <div class="dx-field">
@@ -62,10 +66,10 @@
             item-template="item"
           >
             <template #field="{ data }">
-              <Field :field-data="data"/>
+              <Field :field-data="data" />
             </template>
             <template #item="{ data }">
-              <Item :item-data="data"/>
+              <Item :item-data="data" />
             </template>
           </DxSelectBox>
         </div>
@@ -76,10 +80,7 @@
       <div class="dx-field">
         <div class="dx-field-label">Product</div>
         <div class="dx-field-value">
-          <DxSelectBox
-            :items="simpleProducts"
-            v-model:value="value"
-          />
+          <DxSelectBox :items="simpleProducts" v-model:value="value" />
         </div>
       </div>
       <div class="current-value">
@@ -89,12 +90,12 @@
   </div>
 </template>
 <script>
-import DxSelectBox from 'devextreme-vue/select-box';
-import ArrayStore from 'devextreme/data/array_store';
-import Field from './Field.vue';
-import Item from './Item.vue';
+import DxSelectBox from "devextreme-vue/select-box";
+import ArrayStore from "devextreme/data/array_store";
+import Field from "./Field.vue";
+import Item from "./Item.vue";
 
-import service from './data.js';
+import service from "./data.js";
 
 export default {
   components: {
@@ -110,7 +111,7 @@ export default {
       simpleProducts,
       data: new ArrayStore({
         data: products,
-        key: 'ID',
+        key: "ID",
       }),
       value: simpleProducts[0],
     };
@@ -118,7 +119,9 @@ export default {
 };
 </script>
 <style scoped>
-.dx-dropdownlist-popup-wrapper .dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item-content {
+.dx-dropdownlist-popup-wrapper
+  .dx-list:not(.dx-list-select-decorator-enabled)
+  .dx-list-item-content {
   padding-left: 7px;
   padding-right: 7px;
 }
